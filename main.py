@@ -37,7 +37,7 @@ def main() -> None:
 
     # Message handler for target phrase (case-insensitive)
     application.add_handler(MessageHandler(
-        filters.TEXT & filters.Regex(r'(?i)филин, подтверди'),
+        filters.TEXT & filters.Regex(r'(?i).*филин, подтверди.*'),
         confirm_handler
     ))
 
